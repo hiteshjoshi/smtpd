@@ -116,8 +116,8 @@ func main() {
 	ds := data.NewDataStore()
 
 	// Start HTTP server
-	web.Initialize(config.GetWebConfig(), ds)
-	go web.Start()
+	//web.Initialize(config.GetWebConfig(), ds)
+	//go web.Start()
 
 	// Startup SMTP server, block until it exits
 	smtpServer = smtpd.NewSmtpServer(config.GetSmtpConfig(), ds)
